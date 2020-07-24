@@ -38,4 +38,4 @@ jobs:
       run: npm install --global surge
     
     - name: Run surge
-      run: surge ./build boot_camp_abdulrahaman.surge.su  ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build boot_camp_abdulrahaman.surge.su --token ${{ secrets.SURGE_TOKEN }}
